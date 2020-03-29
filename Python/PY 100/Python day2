@@ -1,0 +1,35 @@
+被安利主要是因为Excel，所以直接跳到Excel第三方库。
+程序基础的东西可以看day1里面推荐的教程，写的很详细。
+
+没兴趣研究excel这个库的，可以跳过day2。
+不过完全小白的话，不妨跟着走一遍，毕竟如此详细的过程描述不多。
+有老鸟发现问题的话也不妨告知一下。
+
+————————————————
+https://pypi.org/
+这是python官方的第三方库
+
+一穷二白，先下载pip和openpyxl
+
+https://pypi.org/project/pip/
+download files里面的pip-20.0.2.tar.gz
+
+https://pypi.org/project/openpyxl/
+下载openpyxl-3.0.3.tar.gz 
+
+下载好以后解压
+
+————————————————
+在windows左下方的搜索栏输入cmd回车
+没有搜索栏？百度一下如何打开搜索栏即可
+
+cd到pip文件夹，在下一层找到setup.py
+输入python setup.py install
+
+安装好后输入
+pip install openpyxl
+我安装的时候有两个Warning，不过似乎不妨碍使用
+
+恭喜你，现在可以对excel上下其手了。
+
+————————————————
