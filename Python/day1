@@ -1,0 +1,97 @@
+被安利了Python，学习并记录一下
+
+————————————————
+登录官网：https://www.python.org/
+下载：3.8.2，Windows x86 executable installer
+安装，记得选to path
+有个自带的开发工具IDLE，先用这个
+
+————————————————
+找了一个教程
+https://github.com/jackfrued/Python-100-Days/blob/master/Day01-15/01.初识Python.md
+知乎第一，感谢作者，先用这个熟悉下
+
+————————————————
+打开IDLE，输入
+print（“Chen99来也”）
+不支持全角符号，很正常~
+print("Chen99来也")
+成功
+
+————————————————
+按照教程输入下列代码
+import turtle
+turtle.pensize(4)
+turtle.pencolor('red')
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.mainloop()
+画了一个矩形~
+
+————————————————
+代码一条条复制也挺麻烦的，看了下，IDLE菜单“File”的“New File”可以整篇粘贴代码，然后在分窗口的菜单栏选run就可以了，好用
+找了个代码试试
+import turtle
+import time
+turtle.color("red", "yellow")
+turtle.speed(10)
+turtle.begin_fill()
+for _ in range(50):
+  turtle.forward(200)
+  turtle.left(170)
+turtle.end_fill()
+turtle.mainloop()
+
+注意for下面的缩进不要修改
+
+————————————————
+基础内容
+
+数据类型
+整型、浮点型、字符串型、布尔型等等，还可以自定义类型~
+
+变量
+大小写敏感：大写A和小写a是两个变量
+不能数字开头
+不要起太像系统变量的名字
+
+type
+返回变量的数据类型
+
+a = 100
+b = 12.345
+c = 'hello, world'
+d = True
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+数据类型转换
+int()：将一个数值或字符串转换成整数，可以指定进制
+float()：将一个字符串转换成浮点数
+等等
+
+运算符
++-x/等等，搞不清楚优先级多用括号
+
+————————————————
+if语句
+
+username = input('请输入用户名: ')
+password = input('请输入口令: ')
+if username == 'admin' and password == '123456':
+print('身份验证成功!')
+else:
+print('身份验证失败!')
+
+python没有用花括号来形成代码块，一样的缩进就代表同一个代码块，感觉这点并不好啊，之前画太阳花那块代码，缩进不同运行结果就不同。
+
+
+
+歇了~
