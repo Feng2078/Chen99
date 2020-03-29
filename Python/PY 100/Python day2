@@ -34,22 +34,21 @@ pip install openpyxl
 
 ————————————————
 先来一段试试
+生成一个Excel文件，存在在程序文件所在目录
 
 from openpyxl import Workbook
-wb = Workbook()
-ws = wb.active
-ws['A1'] = '恭喜'
-ws.append([1, 'hi', '欢迎来到新世界'])
+c99 = Workbook()
+c99_ac = wb.active
+c99_ac['A1'] = '恭喜'
+c99_ac.append([1, 'hi', '欢迎来到新世界'])
 
 import datetime
-ws['A2'] = datetime.datetime.now()
-wb.save("Chen99-day2.xlsx")
-
-生成一个Excel文件，坐落在在程序文件所在目录
-以上代码段同时也是一开始没有excel文件时创建的过程
+c99_ac['A2'] = datetime.datetime.now()
+c99.save("Chen99-day2.xlsx")
 
 ————————————————
 再来一段
+打开在程序文件所在目录的1.xlsx，修改、读取数值并展示，存盘
 
 from openpyxl import load_workbook
 
@@ -71,6 +70,6 @@ print(a.value)
 C99.save("2.xlsx")
 #保存这个工作簿
 
-打开在.py所在目录的1.xlsx，修改、读取数值并展示，存盘
-
 ————————————————
+最近疫情严重，做一个每天确诊人数曲线实验一下吧
+
