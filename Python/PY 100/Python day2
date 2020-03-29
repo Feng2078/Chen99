@@ -33,3 +33,18 @@ pip install openpyxl
 恭喜你，现在可以对excel上下其手了。
 
 ————————————————
+先来一段试试
+
+from openpyxl import Workbook
+wb = Workbook()
+ws = wb.active
+ws['A1'] = '恭喜'
+ws.append([1, 'hi', '欢迎来到新世界'])
+
+import datetime
+ws['A2'] = datetime.datetime.now()
+wb.save("Chen99-day2.xlsx")
+
+Excel文件生成在程序文件所在目录
+
+————————————————
