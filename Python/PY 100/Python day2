@@ -45,6 +45,32 @@ import datetime
 ws['A2'] = datetime.datetime.now()
 wb.save("Chen99-day2.xlsx")
 
-Excel文件生成在程序文件所在目录
+生成一个Excel文件，坐落在在程序文件所在目录
+以上代码段同时也是一开始没有excel文件时创建的过程
+
+————————————————
+再来一段
+
+from openpyxl import load_workbook
+
+C99 = load_workbook('1.xlsx')
+# 打开了py文件所在目录的1.xlsx
+# C99变量存储了这个excel文件
+C99_ac = C99.active
+# C99_ac存储当前活动的工作表
+
+C99_ac['A1']=8
+#修改这个工作表的A1格为8（记录语法）
+
+a = C99_ac.cell(row=2, column=1)
+#引入变量a，等于A2所在格的内容
+
+print(a.value)
+#打印a的值，注意加上.value
+
+C99.save("2.xlsx")
+#保存这个工作簿
+
+打开在.py所在目录的1.xlsx，修改、读取数值并展示，存盘
 
 ————————————————
