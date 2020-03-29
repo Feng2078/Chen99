@@ -20,6 +20,7 @@ print("Chen99来也")
 
 ————————————————
 按照教程输入下列代码
+
 import turtle
 turtle.pensize(4)
 turtle.pencolor('red')
@@ -31,11 +32,14 @@ turtle.forward(100)
 turtle.right(90)
 turtle.forward(100)
 turtle.mainloop()
+
 画了一个矩形~
 
 ————————————————
 代码一条条复制也挺麻烦的，看了下，IDLE菜单“File”的“New File”可以整篇粘贴代码，然后在分窗口的菜单栏选run就可以了，好用
+
 找了个代码试试
+
 import turtle
 import time
 turtle.color("red", "yellow")
